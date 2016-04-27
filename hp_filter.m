@@ -1,4 +1,4 @@
-function Hd = hp_filter
+function b = hp_filter
 %HP_FILTER Returns a discrete-time filter object.
 
 % MATLAB Code
@@ -19,6 +19,7 @@ win = hann(N+1);
 
 % Calculate the coefficients using the FIR1 function.
 b  = fir1(N, Fc/(Fs/2), 'high', win, flag);
-Hd = dfilt.dffir(b);
+%Hd = dfilt.dffir(b);
 
 % [EOF]
+end

@@ -1,4 +1,4 @@
-function Hd = bandpass40008000
+function b = bandpass40008000
 %BANDPASS40008000 Returns a discrete-time filter object.
 
 % MATLAB Code
@@ -19,6 +19,8 @@ win = hann(N+1);
 
 % Calculate the coefficients using the FIR1 function.
 b  = fir1(N, [Fc1 Fc2]/(Fs/2), 'bandpass', win, flag);
-Hd = dfilt.dffir(b);
+%Hd1 = dfilt.dffir(b);
 
 % [EOF]
+
+end
