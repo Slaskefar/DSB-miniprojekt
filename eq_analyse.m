@@ -1,6 +1,6 @@
 [x f_sample] = audioread('angerfist.wav');
 
-output = equalizer(0.25,1,1,4,4);
+output = equalizer(4,4,0.25,0.25,0.25);
 
 x_fft = fft(x,f_sample);
 x_fft = x_fft(:,1);
