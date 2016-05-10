@@ -1,9 +1,9 @@
-function b = ekko
+function b = ekko(amplitude)
 
 
 fsample = 44100;
 
-amplitude
+
 ekko_sekunder = 0.1;
 
 

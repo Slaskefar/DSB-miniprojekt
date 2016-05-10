@@ -1,4 +1,4 @@
-function b = chorus
+function b = chorus(amplitude)
 
 
 fsample = 44100;
@@ -7,7 +7,7 @@ ekko_sekunder = 0.1;
  ekko2 = 0.2;
  ekko3 = 0.3;
  ekko4 = 0.4;
-amplitude = 0.3;
+
 
 
 % ***** Ekko-filter ****************************************************
