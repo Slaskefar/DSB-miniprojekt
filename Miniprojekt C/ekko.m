@@ -12,10 +12,10 @@ delay_samples = round(ekko*fsample);
 H = fft(b,fsample);
 
 % ***** Plots **********************************************************
-%figure(2); clf
-%semilogx(20*log10(abs(H(1:0.5*fsample))))
-%figure(1);clf
-%plot(b)
+figure(2); clf
+semilogx(20*log10(abs(H(1:0.5*fsample))))
+figure(1);clf
+plot(b)
 
 % ***** Filtrering på lyd **********************************************,
 
