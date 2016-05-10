@@ -1,0 +1,9 @@
+[x,sample] = audioread('metallica.wav');
+
+VolumeAmplifier = 1;
+EqMatrix = [1 1 1 1 1];
+Quantize_bit = 
+
+volume(x,VolumeAmplifier);
+equalizer(x,EqMatrix(1),EqMatrix(2),EqMatrix(3),EqMatrix(4),EqMatrix(5));
+QuantizeLyd(
