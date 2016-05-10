@@ -1,4 +1,8 @@
 function output = volume(x,amp)
-output = x*amp;
+
+y = x*amp;
+
+
+output = y;
 end
 
