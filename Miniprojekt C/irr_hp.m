@@ -1,4 +1,4 @@
-function Hd = irr_hp
+function h = irr_hp
 %IRR_HP Returns a discrete-time filter object.
 
 % MATLAB Code

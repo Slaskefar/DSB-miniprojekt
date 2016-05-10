@@ -1,4 +1,4 @@
-function Hd = irr_bp3
+function h = irr_bp3
 %IRR_BP3 Returns a discrete-time filter object.
 
 % MATLAB Code
@@ -16,6 +16,6 @@ Fc2 = 16000;  % Second Cutoff Frequency
 
 % Construct an FDESIGN object and call its BUTTER method.
 h  = fdesign.bandpass('N,F3dB1,F3dB2', N, Fc1, Fc2, Fs);
-Hd = design(h, 'butter');
+%Hd = design(h, 'butter');
 
 % [EOF]
