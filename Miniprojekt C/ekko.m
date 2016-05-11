@@ -6,7 +6,7 @@ fsample = 44100;
 % ***** Ekko-filter ****************************************************
 delay_samples = round(ekko*fsample);
  
- b = [amplitude zeros(1,delay_samples)];
+ b = [1 zeros(1,delay_samples) amplitude];
 
   % ***** Frekvensanalyse ************************************************
 H = fft(b,fsample);
