@@ -13,6 +13,14 @@ win = hann(N+1);
 % Calculate the coefficients using the FIR1 function.
 b  = fir1(N, Fc/(Fs/2), 'low', win, flag);
 
+figure(1); clf
+stem(b)
+axis([1 N+1 0 1.1])
+hold on
+pause
+stem(b(N/2+1:end))
+pause
+
 h = fftshift(real(ifft(b)));
 
 figure(2); clf
